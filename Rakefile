@@ -17,10 +17,12 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mobile_stores"
   gem.homepage = "http://github.com/maximgladkov/mobile_stores"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Tool to gather information from common mobile stores}
+  gem.description = %Q{This tool helps to gather information about any application from common mobile stores: AppStore, Google Play, BlackBerry World and Windows 8 Market}
   gem.email = "maksim.gladkov@gmail.com"
   gem.authors = ["Maxim Gladkov"]
+  gem.add_dependency 'nokogiri'
+  gem.add_dependency 'countries'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -32,13 +34,13 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
+# require 'rcov/rcovtask'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+#   test.rcov_opts << '--exclude "gems/*"'
+# end
 
 task :default => :test
 
