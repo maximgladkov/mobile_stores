@@ -18,8 +18,8 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/maximgladkov/mobile_stores"
   gem.license = "MIT"
   gem.summary = %Q{Tool to gather information from common mobile stores}
-  gem.description = %Q{This tool helps to gather information about any application from common mobile stores: AppStore, Google Play, BlackBerry World and Windows 8 Market}
-  gem.email = "maksim.gladkov@gmail.com"
+  gem.description = %Q{This tool helps to gather information about any application from common mobile stores: App Store, Google Play, Blackberry World, Amazon Marketplace and Windows Store}
+  gem.email = "contact@maximgladkov.com"
   gem.authors = ["Maxim Gladkov"]
   gem.add_dependency 'nokogiri'
   gem.add_dependency 'countries'
